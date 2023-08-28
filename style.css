@@ -3,6 +3,7 @@ body {
 }
 
 .events {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -16,9 +17,11 @@ h1 {
 }
 
 .events .event {
-  width: 300px;
+  /* width: 90%; */
+  margin: auto;
   border: 1px solid #ebf1f6;
   box-shadow: 0 0 2px 0 rgba(145,158,171,.2), 0 12px 24px -4px rgba(145,158,171,.12);
+    
 }
 
 .event-title {
@@ -27,6 +30,7 @@ h1 {
 
 .event img {
   height: 150px;
+
 }
 
 #ticketType {
@@ -61,13 +65,114 @@ h1 {
 }
 
 .add-to-cart-btn {
-  background: #de411b;
+  background: 		#32CD32;
   margin: 22px auto;
   display: block;
-  width: 100%;
+  width: 50%;
 }
 
 .main-content-component {
   margin-bottom: 40px;
 }
+.event-card{
+  width: 100%;
+
+}
+
+.increase-btn, .decrease-btn{
+  width: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 120%;
+  border-radius: 4%;
+  border: #d7411b 2px solid;
+  background-color: #d7411b;
+  color: white;
+  transition: transform .3s;
+}
+
+#style-column {
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  gap: 0.75rem; /* sau orice altă valoare doriți */
+  column-gap: 0.75rem; /* pentru compatibilitate cu anumite browsere */
+  border-bottom-width: 1px;
+  border-color: #edf2f7; /* sau orice altă culoare doriți */
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.25rem; /* sau orice altă valoare doriți */
+  margin-left: 1.5rem; /* sau orice altă valoare doriți */
+  margin-right: 1.5rem; /* sau orice altă valoare doriți */
+}
+
+#style-column .hidden {
+  display: none;
+}
+
+#style-column .md\:flex {
+  display: flex;
+}
+
+#style-column .pl-2 {
+  padding-left: 0.5rem; /* sau orice altă valoare doriți */
+}
+
+#style-column .text-center {
+  text-align: center;
+}
+
+#style-column .w-28 {
+  width: 7rem; /* sau orice altă valoare doriți */
+}
+
+#style-column .sm\:w-3 {
+  width: 0.75rem; /* sau orice altă valoare doriți */
+}
+.span-col{
+  text-align: center;
+  flex: 1;
+}
+
+.purchases-content { 
+  display: flex;
+  flex-direction: column;
+}
+
+.purchases-content > * {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: hwb(0 34% 13%);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: hwb(112 58% 4%);
+}
+
+tr:nth-child(odd) {
+  background-color: hwb(93 69% 1%);
+}
+
+
+
 
